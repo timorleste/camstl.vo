@@ -1,132 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta property="og:image" content="https://caravela.files.wordpress.com/2021/03/camstl-vo2-1.png"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAMSTL – Audiovisual Archive Timor-Leste</title>
 
-    <title>camstl virtual &mdash;office layout-2013-2021</title>
-    <link rel="icon" type="image/png" href="https://caravela.files.wordpress.com/2016/07/ico.png">
-    <meta name="description" content="Covid-19-Support Page for Timor-Leste" />
-    <meta name="keywords" content="Timor Leste, East-Timor, MaxStahl, Audiovisual, Archive, Center, CAMSTL" />
-    <meta name="author" content="timorleste@live.com - Tony Behar" />
+<style>
+:root{
+    --primary:#0b3d91;
+    --secondary:#1e88e5;
+    --light:#f4f7fb;
+    --dark:#222;
+}
 
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Simple Line Icons -->
-    <link rel="stylesheet" href="css/simple-line-icons.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--light);
+}
 
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+/* HEADER */
+header{
+    background:var(--primary);
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+header img{
+    height:60px;
+}
+
+header h1{
+    margin:10px 0 5px;
+}
+
+/* NAVIGATION */
+nav{
+    background:var(--secondary);
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+/* MAIN */
+.container{
+    padding:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:var(--primary);
+}
+
+/* FOOTER */
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    header h1{
+        font-size:20px;
+    }
+}
+</style>
+
 </head>
 <body>
-    <header role="banner" id="fh5co-header">
-        <div class="fluid-container">
-            <nav class="navbar navbar-default navbar-fixed-top js-fullheight">
-                <div id="navbar" class="navbar-collapse js-fullheight">
-                    <ul class="nav navbar-nav navbar-left">
-                        <!-- Add your navigation items here -->
-                    </ul>
-                </div>
-    
 
-    <footer id="fh5co-footer" role="contentinfo">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 to-animate">
-                    <h3 class="section-title">Our Mission</h3>
-                    <p>Our mission is to help facilitate the newly independent East-Timor in accessing the voices and the key events in its past and fostering an understanding of its unique cultural heritage; to help...</p>
-                    <p class="copy-right">&copy; 2020 All Rights Reserved. Design by CAMSTL</p>
-                </div>
-                <div class="col-md-4 to-animate">
-                    <h3 class="section-title">Our Address</h3>
-                    <ul class="contact-info">
-                        <li><i class="icon-map-marker"></i>Rua Formosa No.19. Vera Cruz, Suco Colmera, Rai Nain Dili.</li>
-                        <li><i class="icon-phone"></i>+670 7723 4910</li>
-                        <li><i class="icon-envelope"></i><a href="https://m.me/audiovisualarchivetimorleste">m/audiovisualarchive-timorleste</a></li>
-                        <li><i class="icon-globe2"></i><a href="https://timorleste.github.io/audiovisualarchive">audiovisualarchive-timorleste</a></li>
-                    </ul>
-                    <h3 class="section-title">Connect with Us</h3>
-                    <ul class="social-media">
-                        <li><a href="https://www.facebook.com/audiovisualarchivetimorleste" class="facebook"><i class="icon-facebook"></i></a></li>
-                        <li><a href="https://github.com/timorleste" class="github"><i class="icon-github-alt"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 to-animate">
-                    <h3 class="section-title">Our Community</h3>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faudiovisualarchivetimorleste%2F&tabs=timeline&width=330&height=410&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="330" height="410" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                </div>
-            </div>
-        </div>
-    </footer>
+<header>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Stellar Parallax -->
-    <script src="js/jquery.stellar.min.js"></script>
-    <!-- Counters -->
-    <script src="js/jquery.countTo.js"></script>
-    <!-- Main JS (Do not remove) -->
-    <script src="js/main.js"></script>
+<h1>CAMSTL</h1>
+<p>Audiovisual Archive Timor-Leste</p>
 
-    <!-- Facebook SDK -->
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId      : '1138847206148818',
-                cookie     : true,
-                xfbml      : true,
-                version    : '{api-version}'
-            });
+</header>
 
-            FB.AppEvents.logPageView();
-        };
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Archive</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
 
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+<div class="container">
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '587142028569304');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=587142028569304&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
+<div class="card">
+<h2>Our Mission</h2>
+<p>
+To preserve and provide access to the audiovisual heritage of Timor-Leste, 
+support research, education, and cultural understanding for future generations.
+</p>
+</div>
+
+<div class="card">
+<h2>About Us</h2>
+<p>
+CAMSTL is dedicated to collecting, preserving, and sharing audiovisual materials 
+related to Timor-Leste’s history, culture, and national development.
+</p>
+</div>
+
+<div class="card">
+<h2>Contact</h2>
+<p>
+📍 Rua Formosa No.19, Vera Cruz, Colmera, Dili<br>
+📞 +670 7723 4910<br>
+📧 audiovisualarchive-timorleste
+</p>
+</div>
+
+<div class="card">
+<h2>Our Services</h2>
+<ul>
+<li>Archive preservation</li>
+<li>Digital media collection</li>
+<li>Research support</li>
+<li>Cultural heritage documentation</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+© 2026 CAMSTL – Audiovisual Archive Timor-Leste
+</footer>
+
 </body>
 </html>
